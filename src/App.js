@@ -28,10 +28,12 @@ class App extends Component {
 			<div className="app-wrapper">
 				<div id="quote-box" className="quote-box">
 					{this.state.currentQuote ? <Quote {...currentQuote}/> : null}
-					<div id="new-quote">
-						<button onClick={this.getNewQuote}>New quote</button>
+					<div className="btn-panel">
+						<div id="new-quote">
+							<button className="btn" onClick={this.getNewQuote}>New quote</button>
+						</div>
+						<TweetBtn {...currentQuote}/>
 					</div>
-					<TweetBtn/>
 				</div>
 			</div>
 		);

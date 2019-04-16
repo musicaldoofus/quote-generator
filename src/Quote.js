@@ -1,16 +1,16 @@
 import React from 'react';
-import TweetBtn from './TweetBtn';
+import './Quote.css';
 
 const Quote = ({txt, author, src}) => (
 	<div className="quote">
-		<div id="text">
-			{txt}
+		<div className="quote-text" id="text">
+			"{txt}"
 		</div>
-		<div id="author">
-			{author}
+		<div className="quote-author" id="author">
+			- {author}
 		</div>
-		<div id="source">
-			<a href={src} target="_blank" rel="noopener" rel="noreferrer">Go to source</a>
+		<div className="quote-src" id="source">
+			<a href={`http://eloquentjavascript.net${src}`} target="_blank" rel="noopener" rel="noreferrer">Go to source</a>
 		</div>
 	</div>
 );

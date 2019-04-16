@@ -1,3 +1,30 @@
+body {
+    margin: 0px;
+	background-color: #989CA5;
+}
 .quote-box {
 	text-align: center;
+	margin-top: 80px;
+}
+.btn-panel {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 40px;
+}
+.btn {
+	padding: 12px 20px;
+    background-color: #26BF93;
+    min-width: 80px;
+    border: none;
+    border-radius: 2px;
+	font-family: 'Roboto Slab', serif;
+	color: #fff;
+	font-size: 1.2rem;
+}
+a.btn {
+	text-decoration: none;
+}
+.btn:hover {
+	cursor: pointer;
+	background-color: #9CD8C7;
 }
